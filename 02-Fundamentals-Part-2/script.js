@@ -286,7 +286,7 @@ console.log(
   `${prajwol.firstName} has ${prajwol.friends.length} friends,and his best friend is called ${prajwol.friends[0]}`
 );
  */
-const prajwol = {
+/* const prajwol = {
   firstName: "prajwol",
   lastName: "Maharjan",
   birthYear: 1990,
@@ -306,3 +306,52 @@ console.log(
     prajwol.hasLicense ? "a" : "no"
   }driver license`
 );
+ */
+
+/* const Mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    console.log(this);
+    this.BMI = this.mass / (this.height * this.height);
+    return this.BMI;
+  },
+};
+console.log(Mark.calcBMI());
+const John = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    console.log(this);
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+n;
+console.log(John.calcBMI());
+if (Mark.calcBMI() > John.bmi) {
+  console.log(
+    `Mark miller BMI ${Mark.calcBMI()} is higher than John Smith ${John.calcBMI()}!!`
+  );
+} else if (Mark.calcBMI() < John.calcBMI()) {
+  console.log(
+    `John Smith ${John.calcBMI()} is higher than Mark miller BMI ${
+      Mark.calcBMI
+    }!!`
+  );
+}
+ */
+/* const years = [1991, 2007, 1969, 2020];
+age = [];
+for (let i = 1; i, years.length; i++) {
+  age.push(years[i] - 2037);
+}
+ */
+/* let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+  console.log(`you rolled ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+}
+ */
