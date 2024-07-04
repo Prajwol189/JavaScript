@@ -254,15 +254,55 @@ HINT: Remember that an array needs a value in each position, and that value can 
 GOOD LUCK 😀
 */
 
-/*
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+/* const calcTip = function (bill) {
+  if (bill <= 300 && bill >= 50) {
+    return bill * 0.15;
+  } else {
+    return bill * 0.2;
+  }
+};
+console.log(calcTip(100));
+const bill = [125, 555, 44];
+const tip = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])];
+const total = [bill[0] + tip[0], bill[1] + tip[1], bill[2] + tip[2]];
+console.log(`this is the tips ${tip}`);
+console.log(`this is the total ${total}`); */
+
+/* const prajwol = {
+  firstName: "prajwol",
+  lastName: "Maharjan",
+  age: 20,
+  job: "student",
+  friends: ["sagar", "sujan", "sudip"],
+};
+const interested = prompt("Chose between Name, Age ,Job ,Friends?");
+if (prajwol[interested]) {
+  console.log(prajwol[interested]);
+} else {
+  console.log(" not such things ");
 }
-// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-
-console.log(bills, tips, totals);
-*/
+//Prajwol has 3 friend, and his bestfriend is called sagar
+console.log(
+  `${prajwol.firstName} has ${prajwol.friends.length} friends,and his best friend is called ${prajwol.friends[0]}`
+);
+ */
+const prajwol = {
+  firstName: "prajwol",
+  lastName: "Maharjan",
+  birthYear: 1990,
+  job: "student",
+  friends: ["sagar", "sujan", "sudip"],
+  hasLicense: true,
+  calcAge: function () {
+    console.log(this);
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+};
+console.log(prajwol.calcAge());
+//challenge
+console.log(
+  `${prajwol.firstName} is a ${prajwol.age}-year old has ${prajwol.job}, and ${
+    prajwol.hasLicense ? "a" : "no"
+  }driver license`
+);
