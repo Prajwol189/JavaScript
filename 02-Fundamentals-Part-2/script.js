@@ -355,3 +355,30 @@ while (dice !== 6) {
   dice = Math.trunc(Math.random() * 6) + 1;
 }
  */
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+const calcTip = function (bills) {
+  if (bills <= 300 && bills >= 50) {
+    return bills * 0.15;
+  } else {
+    return bills * 0.2;
+  }
+};
+
+for (let i = 0; i < bills.length; i++) {
+  tips.push(calcTip(bills[i]));
+  totals.push(bills[i] + tips[i]);
+}
+
+console.log(`this is the tips ${tips}`);
+console.log(`this is the total ${totals}`);
+
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+console.log(calcAverage([2, 4, 5]));
