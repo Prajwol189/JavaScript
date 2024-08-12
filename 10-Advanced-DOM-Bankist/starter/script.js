@@ -111,3 +111,8 @@ console.log(logo.getAttribute('src'));
 const link = document.querySelector('.nav__link--btn');
 console.log(link.href);
 console.log(link.getAttribute('href'));
+// Classes
+logo.classList.add('c', 'j');
+logo.classList.remove('c', 'j');
+logo.classList.toggle('c');
+logo.classList.contains('c'); // not includes
