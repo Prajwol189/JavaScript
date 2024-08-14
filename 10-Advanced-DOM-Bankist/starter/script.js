@@ -131,3 +131,11 @@ setTimeout(() => h1.removeEventListener('mouseenter', alertH1), 3000);
 //   alert('onmouseenter: Great! You are reading the heading :D');
 // };
 */
+///////////////////////////////////////
+// Event Propagation in Practice
+// const randomInt = (min, max) =>
+//   Math.floor(Math.random() * (max - min + 1) + min);
+// const randomColor = () =>
+//   `rgb(${randomInt(0, 255)},${randomInt(0, 255)},${randomInt(0, 255)})`;
+
+// //
