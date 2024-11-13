@@ -508,3 +508,7 @@ window.addEventListener('beforeunload', function (e) {
 });
 */
 //
+window.addEventListener('beforeunload', function (e) {
+  e.preventDefault();
+  console.log(e);
+  e.returnValue = '';
