@@ -516,3 +516,11 @@ window.addEventListener('beforeunload', function (e) {
     e.preventDefault();
     console.log(e);
     e.returnValue = '';
+    window.addEventListener('beforeunload', function (e) {
+      e.preventDefault();
+      console.log(e);
+      e.returnValue = '';
+      window.addEventListener('beforeunload', function (e) {
+        e.preventDefault();
+        console.log(e);
+        e.returnValue = '';
