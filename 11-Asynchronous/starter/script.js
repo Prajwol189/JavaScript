@@ -34,3 +34,7 @@ const getCountryData = function (country) {
     countriesContainer.style.opacity = 1;
   });
 };
+getCountryData('portugal');
+getCountryData('usa');
+getCountryData('germany');
+*/
