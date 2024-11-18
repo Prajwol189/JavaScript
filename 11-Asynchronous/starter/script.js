@@ -37,6 +37,7 @@ const getCountryData = function (country) {
 
 // Test the function with a country
 getCountryData('nepal');
+getCountryData('india');
 
 /*
 ///////////////////////////////////////
